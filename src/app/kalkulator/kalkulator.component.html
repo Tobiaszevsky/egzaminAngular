@@ -1,0 +1,25 @@
+<div class="calculator-box">
+    <div class="calc-title">Kalkulator</div>
+    <div class="screen" id="screen">{{currScreen}}</div>
+    <div class="calc-button-layout">
+        <div class="calc"><button class="calc-button" (click)=" operatorpick('+')">+</button></div>
+        <div class="calc"><button class="calc-button" (click)=" operatorpick('-')">-</button></div>
+        <div class="calc"><button class="calc-button" (click)=" operatorpick('*')">*</button></div>
+        <div class="calc"><button class="calc-button" (click)=" operatorpick('/')">/</button></div>
+        <div class="calc"><button class="calc-button" (click)="equalsfunc()">=</button></div>
+    </div>
+    <div class="num-buttons-layout">
+        <button class="num-button" (click)="numberfunc('1')">1</button>
+        <button class="num-button" (click)="numberfunc('2')">2</button>
+        <button class="num-button" (click)="numberfunc('3')">3</button>
+        <button class="num-button" (click)="numberfunc('4')">4</button>
+        <button class="num-button" (click)="numberfunc('5')">5</button>
+        <button class="num-button" (click)="numberfunc('6')">6</button>
+        <button class="num-button" (click)="numberfunc('7')">7</button>
+        <button class="num-button" (click)="numberfunc('8')">8</button>
+        <button class="num-button" (click)="numberfunc('9')">9</button>
+        <div class="free-space"></div>
+        <button class="num-button" (click)="numberfunc('0')">0</button> 
+    </div>
+    <button class="reset-button" (click)="resetfunc()">RESET</button>
+</div>

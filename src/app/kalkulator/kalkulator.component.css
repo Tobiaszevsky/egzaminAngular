@@ -1,0 +1,83 @@
+*{
+    color:black;
+}
+.calculator-box{
+    height: 500px;
+    width: 300px;
+    background-color: #8c93a1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 50px 60px 240px 1fr;
+    grid-template-areas: "title"
+    "grid-screen"
+    "calc-buttons"
+    "number-buttons"
+    "reset-buttons";
+}
+.calc-title{
+    text-align: center;
+    grid-area: title;
+    margin: 5px;
+    font-size: 34px;
+}
+.screen{
+    grid-area: grid-screen;
+    background-color: #1a5227;
+    color: #cac3e3;
+    padding:10px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    text-align: end;
+}
+.calc-button-layout{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 60px;
+    grid-template-areas: "button";
+    grid-area: calc-buttons;
+}
+.calc{
+    margin-top: 20px;
+   
+}
+.calc-button{
+    background-color:  #424957;
+    width: 50px;
+    height: 30px;
+    border-radius: 15px;
+    align-self: center;
+    color: #cac3e3;
+    margin: 5px;
+}
+.num-buttons-layout{
+    grid-area: number-buttons;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "1b 2b 3b"
+    "4b 5b 6b"
+    "7b 8b 9b"
+    "free 0b free2";
+}
+.num-button{
+    background-color:  #424957;
+    width: 60px;
+    height: 30px;
+    border-radius: 15px;
+    align-self: center;
+    margin: 20px;
+    color: #cac3e3;
+}
+.free-space{
+    grid-area: free;
+}
+.reset-button{
+    grid-area: reset-buttons;
+    color: #cac3e3;
+    background-color:  #424957;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 40px;
+    border-radius: 15px;
+}
